@@ -184,7 +184,10 @@ SELECT * FROM "TableName"; -- OK
 Внутри команды и/или организации важно соблюдать единый стандарт оформления кода для того чтобы в дальнейшем его было легко читать/поддерживать как вам, так и другим коллегам.
 
 Если обратиться к примерам [официальной документации](https://www.postgresql.org/docs/) PostgreSQL (которые также имеют некоторое разночтение), то, как правило, им свойственно следующее:
-1. Все [ключевые слова](https://postgrespro.ru/docs/postgresql/15/sql-keywords-appendix), включая SQL операторы/statements, такие как SELECT/INSERT/UPDATE/DELETE, а также команды [DDL](https://postgrespro.ru/docs/postgresql/15/ddl) пишутся в верхнем регистре. Например:
+1. Все [ключевые слова](https://postgrespro.ru/docs/postgresql/15/sql-keywords-appendix),
+включая слова из [DML](https://ru.wikipedia.org/wiki/Data_Manipulation_Language) (_SELECT/INSERT/UPDATE/DELETE_), 
+[DDL](https://postgrespro.ru/docs/postgresql/15/ddl) (_CREATE/ALTER/DROP_)
+а также [DCL](https://ru.wikipedia.org/wiki/Data_Control_Language) (_GRANT/REVOKE_) пишутся в верхнем регистре. Например:
     ```sql
     SELECT * FROM table;
     ```
