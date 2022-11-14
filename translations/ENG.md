@@ -1,0 +1,1 @@
+The FAQ needs translation. Waiting for your PR ;)
