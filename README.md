@@ -208,4 +208,6 @@ SELECT * FROM "TableName"; -- OK
 
 1. [Документация PostgreSQL на русском языке](https://postgrespro.ru/docs/postgresql/);
 2. [Официальный FAQ на русском языке](https://wiki.postgresql.org/wiki/FAQ/ru);
-3. [Вредные и/или опасные действия в PostgreSQL](https://wiki.postgresql.org/wiki/Don't_Do_This) _(eng)_.
+3. [Вредные и/или опасные действия в PostgreSQL](https://wiki.postgresql.org/wiki/Don't_Do_This) _(eng)_;
+4. [Упражнения по SQL](https://www.sql-ex.ru/?Lang=0);
+5. [Руководства по PostgreSQL, примеры использования](https://www.postgresqltutorial.com/) _(eng)_.
