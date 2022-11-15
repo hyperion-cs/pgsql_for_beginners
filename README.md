@@ -20,7 +20,7 @@
     2.4. [У меня медленно работает SQL запрос и я хочу попросить помощи у сообщества. Какую информацию мне необходимо предоставить?](#2.4-slow-query)<br>
     2.5. [У меня не получается написать SQL запрос/etc и/или я получаю ошибки. Какую информацию мне необходимо предоставить для получения помощи от сообщества?](#2.5-invalid-query)<br>
     2.6. [В каком регистре писать команды/функции/etc в PostgreSQL?](#2.6-register-codestyle)<br>
-3. [Книги](#3-books)
+3. [Книги/курсы](#3-learning)
 4. [Полезные ссылки](#4-links)
 5.  [Переводы / Translations](translations)<br>
     5.1. [English](translations/ENG.md)
@@ -198,9 +198,10 @@ SELECT * FROM "TableName"; -- OK
     ```
 
 
-## <a name='3-books' /> [3.](#3-books) Книги :blue_book:
+## <a name='3-learning' /> [3.](#3-learning) Книги/курсы :blue_book:
 1. [Postgres: первое знакомство](https://www.postgrespro.ru/education/books/introbook) ([.pdf](https://edu.postgrespro.ru/introbook_v8.pdf));
-2. [PostgreSQL изнутри](https://www.postgrespro.ru/education/books/internals) ([.pdf](https://edu.postgrespro.ru/postgresql_internals-14.pdf)).
+2. [PostgreSQL изнутри](https://www.postgrespro.ru/education/books/internals) ([.pdf](https://edu.postgrespro.ru/postgresql_internals-14.pdf));
+3. [Базовый курс DBA1](https://postgrespro.ru/education/courses/DBA1) от компании Postgres Professional.
 
 
 ## <a name='4-links' /> [4.](#4-links) Полезные ссылки :link:
