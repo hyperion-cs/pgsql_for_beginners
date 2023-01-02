@@ -14,7 +14,7 @@
 
 1. [Сообщество](#1-community)
 2. [Вопросы](#2-questions)<br>
-    2.1. [Не могу подсоединиться к PostgreSQL. Что делать?](#2.1-connection-refused)<br>
+    2.1. [Не могу подсоединиться к PostgreSQL. Что делать?](#2.1-connection-problem)<br>
     2.2. [Получаю ошибку что имя таблицы/колонки/etc неверное, хотя это не так. В чем дело?](#2.2-name-does-not-exist)<br>
     2.3. [Как публиковать SQL запросы, определения функций, выводы команд вспомогательных утилит и прочую текстовую информацию при запросе помощи у сообщества?](#2.3-data-publication)<br>
     2.4. [У меня медленно работает SQL запрос и я хочу попросить помощи у сообщества. Какую информацию мне необходимо предоставить?](#2.4-slow-query)<br>
@@ -38,12 +38,17 @@
 
 ## <a name='2-questions' /> [2.](#2-questions) Вопросы :interrobang:
 
-### <a name='2.1-connection-refused' /> [2.1.](#2.1-connection-refused) Не могу подсоединиться к PostgreSQL. Что делать?
+### <a name='2.1-connection-problem' /> [2.1.](#2.1-connection-problem) Не могу подсоединиться к PostgreSQL. Что делать?
 
 Пожалуй, это наиболее частый вопрос у начинающих пользователей PostgreSQL, ежедневно звучащий в информационной среде сообщества.
-Как правило, они получают ошибки, содержащие ключевые слова `Connection refused`. Например:
+Как правило, они получают ошибки, содержащие ключевые слова `Connection refused` или `Connection ... failed`. Например:
 ```
 error: connection to server at "localhost", port 5432 failed: Connection refused 
+```
+или (в случае попытки подключения через [unix domain socket](https://en.wikipedia.org/wiki/Unix_domain_socket)):
+```
+error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+    Is the server running locally and accepting connections on that socket?
 ```
 
 Следует провести диагностику проблемы поэтапно (_в настоящее время инструкция применительна только для Unix-based ОС_):
