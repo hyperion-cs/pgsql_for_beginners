@@ -172,6 +172,8 @@ SELECT * FROM "TableName"; -- OK
 3. Вывод метакоманды \d из утилиты [psql](https://postgrespro.ru/docs/postgresql/15/app-psql) для каждой используемой в запросе таблицы;
 4. `EXPLAIN (ANALYZE, BUFFERS)` для запроса (подробнее об EXPLAIN см. [тут](https://postgrespro.ru/docs/postgresql/15/sql-explain)).
 
+:bulb: Для автоматизации этого процесса можно воспользоваться [данным](https://gist.github.com/hyperion-cs/dc97d41e8e4f44944c876015b61f56c4) _.sql_ скриптом под утилиту `psql`.
+
 :exclamation: Внимательно отнеситесь к тому, как [публиковать информацию](#2.3-data-publication),
 которая требуется для ответа на ваш вопрос.
 
