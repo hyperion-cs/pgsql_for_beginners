@@ -253,8 +253,8 @@ SELECT * FROM "TableName"; -- OK
 - Из коробки PostgreSQL поддерживает [декларативное](https://www.postgresql.org/docs/current/ddl-partitioning.html#DDL-PARTITIONING-DECLARATIVE) секционирование и [с использованием наследования](https://www.postgresql.org/docs/current/ddl-partitioning.html#DDL-PARTITIONING-USING-INHERITANCE), первый вариант активно развивается и является хорошей отправной точкой для погружения в данную тему. Однако, существуют и сторонние решения, которые могут помочь в этом с уклоном в горизонтальное масштабирование/шардирование (напр., [citus](https://github.com/citusdata/citus), [spqr](https://github.com/pg-sharding/spqr) и [timescaledb](https://github.com/timescale/timescaledb)).
 
 ## <a name='3-learning' /> [3.](#3-learning) Книги/курсы :blue_book:
-1. [Postgres: первое знакомство](https://www.postgrespro.ru/education/books/introbook) ([.pdf](https://edu.postgrespro.ru/introbook_v8.pdf));
-2. [PostgreSQL изнутри](https://www.postgrespro.ru/education/books/internals) ([.pdf](https://edu.postgrespro.ru/postgresql_internals-14.pdf));
+1. [Postgres: первое знакомство](https://www.postgrespro.ru/education/books/introbook) ([.pdf](https://edu.postgrespro.ru/introbook_v10.pdf));
+2. [PostgreSQL изнутри](https://www.postgrespro.ru/education/books/internals) ([.pdf](https://edu.postgrespro.ru/postgresql_internals-16.pdf));
 3. [Базовый курс DBA1](https://postgrespro.ru/education/courses/DBA1) от компании Postgres Professional.
 
 ## <a name='4-links' /> [4.](#4-links) Полезные ссылки :link:
