@@ -258,7 +258,9 @@ SELECT * FROM "TableName"; -- OK
 ## <a name='4-links' /> [4.](#4-links) Полезные ссылки :link:
 
 1. [Документация PostgreSQL на русском языке](https://postgrespro.ru/docs/postgresql/);
-2. [Официальный FAQ на русском языке](https://wiki.postgresql.org/wiki/FAQ/ru);
-3. [Вредные и/или опасные действия в PostgreSQL](https://wiki.postgresql.org/wiki/Don't_Do_This) _(eng)_;
-4. [Упражнения по SQL](https://www.sql-ex.ru/?Lang=0);
-5. [Руководства по PostgreSQL, примеры использования](https://www.postgresqltutorial.com/) _(eng)_.
+2. [Вредные и/или опасные действия в PostgreSQL](https://wiki.postgresql.org/wiki/Don't_Do_This) _(eng)_;
+3. [SQLize — быстрый запуск, эксперименты и обмен кодом SQL](https://sqlize.online/);
+4. [SQLtest — упражнения по SQL](https://sqltest.online/ru);
+5. [Sql-ex.ru — упражнения по SQL](https://www.sql-ex.ru/?Lang=0);
+6. [Официальный FAQ на русском языке](https://wiki.postgresql.org/wiki/FAQ/ru);
+7. [Туториалы по PostgreSQL, примеры использования](https://www.postgresqltutorial.com/) _(eng)_.
