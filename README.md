@@ -113,7 +113,7 @@ PostgreSQL будет принимать соединения, является 
 С помощью значения `0.0.0.0` можно принимать подключения со всех адресов IPv4, а `::` — все адреса IPv6.
 В то же время, если указать значение `*`, то PostgreSQL будет принимать подключения со всех имеющихся сетевых интерфейсов.
 
-Подробнее о подключениях и аутентификации к PostgreSQL см. [тут](https://postgrespro.ru/docs/postgresql/15/runtime-config-connection#RUNTIME-CONFIG-CONNECTION-SETTINGS).
+Подробнее о подключениях и аутентификации к PostgreSQL см. [тут](https://postgrespro.ru/docs/postgresql/17/runtime-config-connection#RUNTIME-CONFIG-CONNECTION-SETTINGS).
 Напомним, что после применения изменений в файл `postgresql.conf` необходимо произвести рестарт PostgreSQL.
 
 :exclamation: В случае, если вы указали PostgreSQL прослушивать внешние интерфейсы
@@ -126,7 +126,7 @@ PostgreSQL будет принимать соединения, является 
 Несмотря на то, что параметр `listen_addresses` в файле `postgresql.conf` настроен верно, PostgreSQL всё ещё может отвергать соединения.
 Причиной может быть то, что в конфигурационном файле `pg_hba.conf` нет соответствующего разрешения.
 
-Подробнее о файле `pg_hba.conf` см. [тут](https://postgrespro.ru/docs/postgresql/15/auth-pg-hba-conf) (включая примеры настройки).
+Подробнее о файле `pg_hba.conf` см. [тут](https://postgrespro.ru/docs/postgresql/17/auth-pg-hba-conf) (включая примеры настройки).
 
 #### 2.1.5. Верна ли конфигурация firewall? 
 
@@ -159,7 +159,7 @@ SELECT * FROM "TableName"; -- OK
 ### <a name='2.3-data-publication' /> [2.3.](#2.3-data-publication) Как публиковать SQL запросы, определения функций, выводы команд вспомогательных утилит и прочую текстовую информацию при запросе помощи у сообщества?
 
 Прежде всего, **не используйте** скриншоты для того, чтобы показать SQL запросы (и/или их результаты), определения функций,
-выводы команд вспомогательных утилит (таких, как [psql](https://postgrespro.ru/docs/postgresql/15/app-psql) и др.) и прочую текстовую информацию — это затрудняет их анализ, скорость/удобство воспроизведения проблемы и переиспользования вашего кода.
+выводы команд вспомогательных утилит (таких, как [psql](https://postgrespro.ru/docs/postgresql/17/app-psql) и др.) и прочую текстовую информацию — это затрудняет их анализ, скорость/удобство воспроизведения проблемы и переиспользования вашего кода.
 Заметно эффективнее будет публикация оных, напр., на [gist](https://gist.github.com/) или [pastebin.com](https://pastebin.com/).
 
 При этом, если вы задаете вопрос в tg-чате и кол-во содержимого невелико, его следует опубликовать в режиме [форматирования Monospace](https://telegra.ph/markdown-07-07) непосредственно в чат, используя ` ```language syntax `, выбрав в кач-ве языка `sql` (таким образом будет достигнута подсветка синтаксиса SQL).
@@ -176,8 +176,8 @@ SELECT * FROM "TableName"; -- OK
 
 1. Версия PostgreSQL на сервере, где запускается запрос — можно использовать вывод `SELECT version();`
 2. Непосредственно SQL запрос;
-3. Вывод метакоманды `\d+` из утилиты [psql](https://postgrespro.ru/docs/postgresql/15/app-psql) для каждой используемой в запросе таблицы;
-4. `EXPLAIN (ANALYZE, VERBOSE, BUFFERS, COSTS, SETTINGS, TIMING, WAL)` для запроса (подробнее об _EXPLAIN_ см. [тут](https://postgrespro.ru/docs/postgresql/15/sql-explain)).
+3. Вывод метакоманды `\d+` из утилиты [psql](https://postgrespro.ru/docs/postgresql/17/app-psql) для каждой используемой в запросе таблицы;
+4. `EXPLAIN (ANALYZE, VERBOSE, BUFFERS, COSTS, SETTINGS, TIMING, WAL)` для запроса (подробнее об _EXPLAIN_ см. [тут](https://postgrespro.ru/docs/postgresql/17/sql-explain)).
 Если ваша версия PostgreSQL ещё не поддерживает какие-то из опций _EXPLAIN_ выше, то уберите их. Когда нет возможности дождаться результата запроса, можно также убрать и опцию _ANALYZE_.
 
 :bulb: Для автоматизации этого процесса можно воспользоваться [данным](https://gist.github.com/hyperion-cs/dc97d41e8e4f44944c876015b61f56c4) _.sql_ скриптом под утилиту `psql`.
@@ -192,8 +192,8 @@ SELECT * FROM "TableName"; -- OK
 2. Продемонстрируйте то, что вы уже сделали. Это докажет то, что вы попытались решить проблему самостоятельно,
 а также даст начальную точку для участников сообщества, которые захотят вам помочь. Если вы получаете ошибки, то их также стоит приложить к своему вопросу;
 3. Выполните хотя бы один из пунктов:<br>
-    3.1. Предоставьте вывод метакоманды `\d` из утилиты [psql](https://postgrespro.ru/docs/postgresql/15/app-psql) для каждой таблицы, которая будет участвовать в запросе;<br>
-    3.2. Создайте тестовое окружение, которое воспроизводит ваши [таблицы](https://postgrespro.ru/docs/postgresql/15/ddl)/данные и непосредственно проблему.
+    3.1. Предоставьте вывод метакоманды `\d` из утилиты [psql](https://postgrespro.ru/docs/postgresql/17/app-psql) для каждой таблицы, которая будет участвовать в запросе;<br>
+    3.2. Создайте тестовое окружение, которое воспроизводит ваши [таблицы](https://postgrespro.ru/docs/postgresql/17/ddl)/данные и непосредственно проблему.
          Это поможет другим участникам сообщества легко и быстро приступить к изучению вашей проблемы (и, как следствие, повысит желание помогать в её решении).
          Для этого следует использовать такие сервисы как [sqlize.online](https://sqlize.online/) или [db-fiddle.com](https://www.db-fiddle.com/).<br>
 
@@ -210,9 +210,9 @@ SELECT * FROM "TableName"; -- OK
 Внутри команды и/или организации важно соблюдать единый стандарт оформления кода для того чтобы в дальнейшем его было легко читать/поддерживать как вам, так и вашим коллегам.
 
 Если обратиться к примерам [официальной документации](https://www.postgresql.org/docs/) PostgreSQL (которые также имеют некоторое разночтение), то, как правило, им свойственно следующее:
-1. Все [ключевые слова](https://postgrespro.ru/docs/postgresql/15/sql-keywords-appendix),
+1. Все [ключевые слова](https://postgrespro.ru/docs/postgresql/17/sql-keywords-appendix),
 включая слова из [DML](https://ru.wikipedia.org/wiki/Data_Manipulation_Language) (_SELECT/INSERT/UPDATE/DELETE_), 
-[DDL](https://postgrespro.ru/docs/postgresql/15/ddl) (_CREATE/ALTER/DROP_)
+[DDL](https://postgrespro.ru/docs/postgresql/17/ddl) (_CREATE/ALTER/DROP_)
 а также [DCL](https://ru.wikipedia.org/wiki/Data_Control_Language) (_GRANT/REVOKE_) пишутся в верхнем регистре. Например:
     ```sql
     SELECT * FROM table;
