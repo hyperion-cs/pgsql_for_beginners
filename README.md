@@ -296,9 +296,14 @@ SELECT id, name FROM users; -- Хорошо
 ```
 
 ## <a name='3-learning' /> [3.](#3-learning) Книги/курсы :blue_book:
-1. [Postgres: первое знакомство](https://www.postgrespro.ru/education/books/introbook) ([.pdf](https://edu.postgrespro.ru/introbook_v10.pdf));
-2. [PostgreSQL изнутри](https://www.postgrespro.ru/education/books/internals) ([.pdf](https://edu.postgrespro.ru/postgresql_internals-16.pdf));
-3. [Базовый курс DBA1](https://postgrespro.ru/education/courses/DBA1) от компании Postgres Professional.
+1. [Образовательные материалы](https://postgrespro.ru/education/) от компании Postgres Professional, в т.ч. (в порядке увеличения сложности):<br>
+    1.1. [Postgres: первое знакомство](https://www.postgrespro.ru/education/books/introbook) (книга, [.pdf](https://edu.postgrespro.ru/introbook_v11.pdf));<br>
+    1.2. [PostgreSQL. Основы языка SQL](https://postgrespro.ru/education/books/sqlprimer) (книга, [.pdf](https://edu.postgrespro.ru/sql_primer.pdf));<br>
+    1.3. [PostgreSQL. Профессиональный SQL](https://postgrespro.ru/education/books/advancedsql) (книга, [.pdf](https://edu.postgrespro.ru/advanced_sql.pdf));<br>
+    1.4. [Основы технологий баз данных](https://postgrespro.ru/education/university/dbtech);<br>
+    1.5. [PostgreSQL изнутри](https://www.postgrespro.ru/education/books/internals) (книга, [.pdf](https://edu.postgrespro.ru/postgresql_internals-17.pdf)).
+
+_* Стоит заметить, что материалы выше не являются рекламой — они действительно крайне достойного качества, при этом распространяются свободно._
 
 ## <a name='4-links' /> [4.](#4-links) Полезные ссылки :link:
 
